@@ -22,29 +22,29 @@ debug:
 	make server_debug
 
 client_debug:
-	@go build -gcflags "-N -l" -o dtunnel_d client.go
+	@go build -gcflags "-N -l" -o dtunnel_d github.com/Zumium/dog-tunnel/client
 server_debug:
-	@go build -gcflags "-N -l" -o dtunnel_s_d server.go
+	@go build -gcflags "-N -l" -o dtunnel_s_d github.com/Zumium/dog-tunnel/server
 
 
 client:
-	@go build -ldflags "-s -w" -o bin/dtunnel client.go
+	@go build -ldflags "-s -w" -o bin/dtunnel github.com/Zumium/dog-tunnel/client
 client_linux:
-	@GOOS=linux GOARCH=amd64 go build -ldflags "-s -w" -o bin/linux/dtunnel client.go
+	@GOOS=linux GOARCH=amd64 go build -ldflags "-s -w" -o bin/linux/dtunnel github.com/Zumium/dog-tunnel/client
 client_pi:
-	@GOOS=linux GOARCH=arm go build -ldflags "-s -w" -o bin/pi/dtunnel client.go
+	@GOOS=linux GOARCH=arm go build -ldflags "-s -w" -o bin/pi/dtunnel github.com/Zumium/dog-tunnel/client
 client_win:
-	@GOOS=windows GOARCH=amd64 go build -ldflags "-s -w" -o bin/windows/dtunnel.exe client.go
+	@GOOS=windows GOARCH=amd64 go build -ldflags "-s -w" -o bin/windows/dtunnel.exe github.com/Zumium/dog-tunnel/client
 
 
 server:
-	@go build -ldflags "-s -w" -o bin/dtunnel_s server.go
+	@go build -ldflags "-s -w" -o bin/dtunnel_s github.com/Zumium/dog-tunnel/server
 server_linux:
-	@GOOS=linux GOARCH=amd64 go build -ldflags "-s -w" -o bin/linux/dtunnel_s server.go
+	@GOOS=linux GOARCH=amd64 go build -ldflags "-s -w" -o bin/linux/dtunnel_s github.com/Zumium/dog-tunnel/server
 server_pi:
-	@GOOS=linux GOARCH=arm go build -ldflags "-s -w" -o bin/pi/dtunnel_s server.go
+	@GOOS=linux GOARCH=arm go build -ldflags "-s -w" -o bin/pi/dtunnel_s github.com/Zumium/dog-tunnel/server
 server_win:
-	@GOOS=windows GOARCH=amd64 go build -ldflags "-s -w" -o bin/windows/dtunnel_s.exe server.go
+	@GOOS=windows GOARCH=amd64 go build -ldflags "-s -w" -o bin/windows/dtunnel_s.exe github.com/Zumium/dog-tunnel/server
 
 clean:
 	@rm -rf bin/*
