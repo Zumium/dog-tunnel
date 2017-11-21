@@ -970,7 +970,7 @@ func Ikcp_flush(kcp *Ikcpcb) {
 
 			need = int32(IKCP_OVERHEAD + segment._len)
 
-			////fmt.Printf("vzex:need send%d, %d,%d,%d\n", kcp.nsnd_buf, size, need, kcp.mtu)
+			////fmt.Printf("Zumium:need send%d, %d,%d,%d\n", kcp.nsnd_buf, size, need, kcp.mtu)
 			if size+need > int32(kcp.mtu) {
 				//      //fmt.Printf("trigger!\n");
 				ikcp_output(kcp, buffer, size)

@@ -1,6 +1,6 @@
 package nat
 
-import "github.com/vzex/dog-tunnel/ikcp"
+import "github.com/Zumium/dog-tunnel/ikcp"
 import "github.com/klauspost/reedsolomon"
 import "github.com/vzex/zappy"
 

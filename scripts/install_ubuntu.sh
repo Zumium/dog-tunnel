@@ -10,7 +10,7 @@ echo 'export GOROOT=/root/go' >> .bashrc
 echo 'export GOPATH=/root/goworkspace' >> .bashrc
 echo 'export PATH="/root/go/bin:/root/goworkspace/bin:"$PATH' >> .bashrc
 source ~/.bashrc
-git clone https://github.com/vzex/dog-tunnel.git
+git clone https://github.com/Zumium/dog-tunnel.git
 cd dog-tunnel
 go get github.com/go-sql-driver/mysql
 make

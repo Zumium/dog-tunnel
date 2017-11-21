@@ -22,8 +22,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/vzex/dog-tunnel/common"
-	"github.com/vzex/dog-tunnel/nat"
+	"github.com/Zumium/dog-tunnel/common"
+	"github.com/Zumium/dog-tunnel/nat"
 )
 
 var accessKey = flag.String("key", "", "please login into dog-tunnel.tk to get accesskey")

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/vzex/dog-tunnel/nat/stun"
+	"github.com/Zumium/dog-tunnel/nat/stun"
 )
 
 func Init(outIpList string, buster bool, id int, udpAddr string) (*AttemptEngine, error) {

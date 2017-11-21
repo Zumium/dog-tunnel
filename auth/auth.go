@@ -9,7 +9,7 @@ import (
 	"time"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/vzex/dog-tunnel/common"
+	"github.com/Zumium/dog-tunnel/common"
 )
 
 const (
@@ -314,7 +314,7 @@ func UpdateUser(name string, user *User) error {
 }
 
 var authBaseId int = 1
-var staticKey string = "admin vzex"
+var staticKey string = "admin Zumium"
 
 func genUserKey(name string) string {
 	authBaseId++
@@ -405,16 +405,16 @@ func main() {
 		panic(err)
 	}
 	defer DeInit()
-	user, _err := GetUser("vzex")
-	user, _err = GetUser("vzex")
-	user, _err = GetUser("vzex")
+	user, _err := GetUser("Zumium")
+	user, _err = GetUser("Zumium")
+	user, _err = GetUser("Zumium")
 	if _err == nil {
 		fmt.Printf("%+v\n", *user)
 	} else {
 		panic(_err)
 	}
 	time.Sleep(time.Second * 31)
-	user, _err = GetUser("vzex")
+	user, _err = GetUser("Zumium")
 	time.Sleep(time.Second * 50)
 }
 */

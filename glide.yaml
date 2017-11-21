@@ -1,0 +1,7 @@
+package: github.com/Zumium/dog-tunnel
+import:
+- package: github.com/go-sql-driver/mysql
+  version: ^1.3.0
+- package: github.com/klauspost/reedsolomon
+  version: ^1.6.0
+- package: github.com/vzex/zappy

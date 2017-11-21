@@ -11,10 +11,10 @@ go get github.com/go-sql-driver/mysql
 
 go get github.com/klauspost/reedsolomon
 
-go get github.com/cznic/zappy
+go get github.com/vzex/zappy
 
 编译程序
-go get -u -d github.com/vzex/dog-tunnel && cd $GOPATH/src/github.com/vzex/dog-tunnel/ && git checkout master && make
+go get -u -d github.com/Zumium/dog-tunnel && cd $GOPATH/src/github.com/Zumium/dog-tunnel/ && git checkout master && make
 
 (windows用户自行修改路径)
 
@@ -53,15 +53,6 @@ usersetting下面有多个子命令(直接拼在上面主api后面)
 &action=set&user=aaa&type=super&serven=10&sessionn=100&pipen=10&sameip=10,对aaa的账号做功能限制，type指定的类型有默认的几套配置，也可以通过指定servern(可以注册的名字数上限),sessionn(每个注册的服务器可以连接的会话数上限),pipen(每个会话最多支持几条p2p管道),sameip(同ip可注册服务数上限)来单独指定配置
 
 ```
-## Thanks
-
-[netroby](https://github.com/netroby)
-
 ## License
 
 [MIT License](LICENSE)
-
-## Credits
-![Welcome donate with Alipay && 欢迎使用支付宝对该项目进行捐赠](https://raw.githubusercontent.com/vzex/dog-tunnel/udpVersion/dog-tunnel.png)
-
-author: vzex@163.com
