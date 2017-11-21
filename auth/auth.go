@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"time"
 
-	_ "github.com/go-sql-driver/mysql"
 	"github.com/Zumium/dog-tunnel/common"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 const (
@@ -174,7 +174,7 @@ var g_UpdateUserStmt *sql.Stmt
 func Init(user, passwd, host string) error {
 	g_Name2Users = make(map[string]*User)
 	var err error
-	g_Database, err = sql.Open("mysql", user+":"+passwd+"@tcp("+host+")/dogtunnel")
+	g_Database, err = sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s)/dogtunnel", user, passwd, host))
 	if err != nil {
 		return err
 	}
